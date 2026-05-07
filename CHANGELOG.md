@@ -2,7 +2,7 @@
 
 This project follows [Semantic Versioning](http://semver.org/).
 
-## [41.3.0] tbd
+## [42.1.0] 2026-05-07
 ### Changed
 - For ValueSet expansions, score import now prioritizes
   `expansion.contains.property` (R5) and the R4/R4B backport extension
@@ -10,6 +10,11 @@ This project follows [Semantic Versioning](http://semver.org/).
   Legacy score extraction from `expansion.contains.extension`
   (`ordinalValue`/`itemWeight`) is retained as a deprecated fallback for
   backward compatibility.
+
+## [42.0.0] 2026-04-29
+### Changed
+- LForms.Util.validateQuestionnaireOnFHIRServer() returned Promise
+  now resolves to an OperationOutcome resource from the $validate operation.
 
 ## [41.2.0] 2026-04-20
 ### Added
@@ -2086,3 +2091,4 @@ object.
 ### Removed
 - WidgetUtil.preprocessRIData.  This was an internal API, so it should not be
   a breaking change for anyone but ourselves.
+
